@@ -1,9 +1,9 @@
 from calculadora import Calculadora
 
-valorA = float(input("digite o primeiro valor: "))
-valorB = float(input("digite o segundo valor: "))
-operacao = input("digite a operação: ")
+def main():
+    calc = Calculadora()
+    calc.entradaDados()  # Permite a entrada de dados pelo usuário
+    calc.mostrarResultado()
 
-calculadora = Calculadora(valorA, valorB, operacao)
-
-print(calculadora.calcular())
+if __name__ == "__main__":
+    main()
